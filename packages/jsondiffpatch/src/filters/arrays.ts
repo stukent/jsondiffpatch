@@ -300,7 +300,7 @@ export const patchFilter: Filter<PatchContext> = function nestedPatchFilter(
   let index1;
 
   const delta = nestedDelta as ArrayDelta;
-  const array = context.left as unknown[];
+  const array = (context.left ?? []) as unknown[];
 
   // first, separate removals, insertions and modifications
   let toRemove: number[] = [];
