@@ -81,6 +81,7 @@ export const patchFilter: Filter<PatchContext> = function nestedPatchFilter(
   let name;
   let child;
   for (name in objectDelta) {
+    if (!context.left) context.left = {}
     child = new PatchContext(
       (context.left as Record<string, unknown>)[name],
       objectDelta[name],

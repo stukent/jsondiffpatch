@@ -1,6 +1,6 @@
 {
   "name": "@stukent/jsondiffpatch",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "author": "Benjamin Eidelman <beneidel@gmail.com>",
   "description": "Diff & Patch for Javascript objects",
   "contributors": [
